@@ -14,7 +14,7 @@ public class ClassInfo {
      * @param clazz Class object
      * @return List with information about the fields and their annotations of the Class object in PairNameOther objects
      */
-    public List<PairNameOther> getClassFields(Class<?> clazz) {
+    public List<PairNameOther> getClassFields(Class clazz) {
 
 
         Field[] fields = clazz.getDeclaredFields();
@@ -40,7 +40,7 @@ public class ClassInfo {
      * @param clazz Class object
      * @return List with information about the methods and their annotations of Class object in PairNameOther objects
      */
-    public List<PairNameOther> getClassMethods(Class<?> clazz) {
+    public List<PairNameOther> getClassMethods(Class clazz) {
         Method[] methods = clazz.getDeclaredMethods();
         if (methods.length == 0) {
             return null;
