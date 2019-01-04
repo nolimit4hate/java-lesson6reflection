@@ -10,8 +10,9 @@ import java.util.logging.Level;
 public class JarRipper {
     /**
      * take from all JarEntry objects only *.class and load them with Classloader
+     *
      * @param jarEntry Enumeration of JarEntry - everything in jar
-     * @param loader - ClassLoader type. if we find *.class we load this file by loader
+     * @param loader   - ClassLoader type. if we find *.class we load this file by loader
      * @return map with Key = object Class type; Value = array of annotation of this class
      */
     public Map<Class, Annotation[]> JarClassesToMap(Enumeration<JarEntry> jarEntry, ClassLoader loader) {
@@ -34,5 +35,11 @@ public class JarRipper {
         }
         return classesMap;
     }
+
+    public Map<Class, Annotation[]> jarToMap(ClassLoader loader) {
+
+        return null;
+    }
+
 
 }

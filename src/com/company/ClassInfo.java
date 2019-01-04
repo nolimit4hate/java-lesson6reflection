@@ -28,7 +28,7 @@ public class ClassInfo {
             String fieldName = field.getName();
             String fieldType = field.getType().getName();
             Annotation[] annotations = field.getAnnotations();
-            if(annotations.length == 0)
+            if (annotations.length == 0)
                 fieldsList.add(new PairNameOther(fieldName, fieldType));
             else
                 fieldsList.add(new PairNameOther(fieldName, fieldType, annotations));
@@ -57,14 +57,13 @@ public class ClassInfo {
             }
             String methodSignature = methodSignatureB.toString();
             Annotation[] annotations = method.getDeclaredAnnotations();
-            if(annotations.length == 0)
+            if (annotations.length == 0)
                 methodsList.add(new PairNameOther(methodName, methodSignature));
             else
                 methodsList.add(new PairNameOther(methodName, methodSignature, annotations));
         }
         return methodsList;
     }
-
 
 
 }

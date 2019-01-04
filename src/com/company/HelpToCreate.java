@@ -8,11 +8,11 @@ import java.lang.annotation.Annotation;
  */
 public class HelpToCreate {
 
-    public static String annotationsToString(Annotation[] annotations){
-        if(annotations == null || annotations.length == 0)
+    public static String annotationsToString(Annotation[] annotations) {
+        if (annotations == null || annotations.length == 0)
             return "";
         StringBuilder stringBuilder = new StringBuilder("");
-        for(Annotation a : annotations){
+        for (Annotation a : annotations) {
             stringBuilder.append(a.toString());
         }
         return stringBuilder.toString();
