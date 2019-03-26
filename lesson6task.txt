@@ -1,0 +1,32 @@
+Цель: 
+ознакомление с рефлексией
+Материал: 
+Создание собственных аннотаций - Annotations #1 - Advanced Java
+Использование Reflection API - Annotations/Reflection #2 - Advanced Java
+https://docs.oracle.com/javase/tutorial/reflect/index.html (внизу статьи trail lessons, прочитать)
+Classes
+Members
+Задание:
+Часть 1:
+Создать свою аннотацию @Planet для классов, с параметром name типа String и density типа Double
+Создать класс, PlanetData, с полями radius типа Double, пометить класс аннотацией со значениями “Earth” и значением плотности земли
+Создать PlanetMassCalculator, с методом calc который принимает PlanetData как параметр и считает массу земли по плотности и объему (объем сферы посчитать по радиусу, плотность получить через ReflectionAPI)
+Написать main метод который будет инициализировать объеты, делать расчет и выводить его на экран
+
+Часть 2:
+Познакомиться с утилитой jar - https://docs.oracle.com/javase/tutorial/deployment/jar/index.html
+Сделать jar архив из классов в части 1
+
+Часть 3:
+Написать утилиту, которая как параметр принимает имя jar файла
+Загружает его в classpath с помощью classloader 
+https://www.baeldung.com/java-classloaders
+https://dzone.com/articles/demystify-java-class-loading
+https://habr.com/post/103830/
+
+С помощью рефлексии получить список классов, аннотаций над классом
+
+Для каждого класса получить и распечатать
+список всех полей и их типов, аннотаций
+
+список всех методов и их сигнатур, аннотаций
